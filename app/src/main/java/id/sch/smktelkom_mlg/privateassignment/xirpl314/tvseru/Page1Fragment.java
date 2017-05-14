@@ -56,7 +56,7 @@ public class Page1Fragment extends Fragment {
     }
 
     private void downloadDataSource() {
-        String url = "https://api.themoviedb.org/3/movie/top_rated?api_key=c96c586178c4f8a9b5a9f7cb0d0ab3f0&language=en-US&page=1";
+        String url = "https://api.themoviedb.org/3/movie/upcoming?api_key=c96c586178c4f8a9b5a9f7cb0d0ab3f0&language=en-US&page=1";
 
         GsonGetRequest<ResultResponse> myRequest = new GsonGetRequest<ResultResponse>
                 (url, ResultResponse.class, null, new Response.Listener<ResultResponse>() {

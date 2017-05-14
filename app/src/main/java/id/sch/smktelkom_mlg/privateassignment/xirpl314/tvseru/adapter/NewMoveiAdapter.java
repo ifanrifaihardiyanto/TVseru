@@ -1,6 +1,8 @@
 package id.sch.smktelkom_mlg.privateassignment.xirpl314.tvseru.adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +14,7 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
+import id.sch.smktelkom_mlg.privateassignment.xirpl314.tvseru.NewScrollingActivity;
 import id.sch.smktelkom_mlg.privateassignment.xirpl314.tvseru.Page1Fragment;
 import id.sch.smktelkom_mlg.privateassignment.xirpl314.tvseru.R;
 import id.sch.smktelkom_mlg.privateassignment.xirpl314.tvseru.model.Result;
@@ -55,6 +58,18 @@ public class NewMoveiAdapter extends RecyclerView.Adapter<NewMoveiAdapter.ViewHo
                 .placeholder(R.mipmap.ic_launcher)
                 .error(R.mipmap.ic_launcher)
                 .into(holder.imageView);
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String id = result.id;
+                Intent intent = new Intent(context, NewScrollingActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                intent.putExtra("movie_title",result.title);
+                intent.putExtra("poster_path",result.backdrop_path);
+                intent.putExtra("description",result.overview);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -69,12 +84,14 @@ public class NewMoveiAdapter extends RecyclerView.Adapter<NewMoveiAdapter.ViewHo
         TextView tvName;
         TextView tvDesc;
         ImageView imageView;
+        CardView cardView;
 
         public ViewHolder(View itemView) {
             super(itemView);
             tvName = (TextView) itemView.findViewById(R.id.textViewName);
             tvDesc = (TextView) itemView.findViewById(R.id.textViewDesc);
             imageView = (ImageView) itemView.findViewById(R.id.imageViewMain);
+            cardView = (CardView) itemView.findViewById(R.id.CardView);
         }
     }
 }
