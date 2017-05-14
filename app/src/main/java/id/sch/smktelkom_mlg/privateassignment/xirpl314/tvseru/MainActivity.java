@@ -127,6 +127,8 @@ public class MainActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             if (position==0)
                 return new Page1Fragment();
+            else if (position==1)
+                return new Page2Fragment();
             else
                 return PlaceholderFragment.newInstance(position + 1);
         }
