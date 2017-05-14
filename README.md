@@ -12,8 +12,12 @@
     - https://www.themoviedb.org/documentation/api
 ## Jenis Navigasi
     - Action Bar Tabs (with ViewPager)
-## Library
-    - SQLite Dasar
+## Deskripsi
+    - Aplikasi ini menampilkan data-data film yang akan rilis di bioskop, film dengan top rate yang banyak dan 
+    juga film yang paling popular dikalangan anak-anak hingga dewasa. Genre film dalam aplikasi sangat lengkap
+    mulai dari action, comedy, horror, dll.
+## Kelebihan
+    - dapat melihat film-film terbaru saat ini atau film yang paling popular.
 ## Screenshoot
     ![1](https://cloud.githubusercontent.com/assets/22077698/26035653/f372dc88-38f9-11e7-8619-2c6d93e36dda.jpg)
 ![2](https://cloud.githubusercontent.com/assets/22077698/26035652/f372cc2a-38f9-11e7-9330-bff196291fac.jpg)
