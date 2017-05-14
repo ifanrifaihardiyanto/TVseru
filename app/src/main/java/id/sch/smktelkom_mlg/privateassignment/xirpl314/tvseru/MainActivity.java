@@ -129,6 +129,8 @@ public class MainActivity extends AppCompatActivity {
                 return new Page1Fragment();
             else if (position==1)
                 return new Page2Fragment();
+            else if (position==2)
+                return new Page3Fragment();
             else
                 return PlaceholderFragment.newInstance(position + 1);
         }
@@ -147,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
                 case 1:
                     return "Top Movie";
                 case 2:
-                    return "SECTION 3";
+                    return "Popular Movie";
             }
             return null;
         }
