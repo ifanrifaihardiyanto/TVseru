@@ -1,6 +1,6 @@
 # TVseru
 ## Link file APK release
-    - https://drive.google.com/open?id=0B90Dr3Htr-e_RmpkNFdIcExCN0U
+    - https://drive.google.com/open?id=0B90Dr3Htr-e_UlFqNnRSaVhidzQ
 ## Identitas Diri
     - Nama          : Ifan Rifai Hardiyanto
     - Kelas         : XI RPL 3
